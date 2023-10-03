@@ -1,0 +1,167 @@
+:root{
+    --main-color:#2196f3;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.game{
+    min-height: 100vh;
+    background-color: #Eee;
+
+}
+.name{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 20px 15px;
+    color: white;
+    background-color: var(--main-color);
+    /* margin-bottom: 15px; */
+}
+.container{
+    margin: auto; 
+    width: 900px;
+
+}
+select{
+    /* width: 20%; */
+    padding: 10px 15px;
+    margin: 15px auto;
+    width: 40%;
+    border: 1px solid #5095eb;
+
+    border-radius: 6px;
+}
+select option{
+    padding: 10px;
+    border-radius: 6px;
+}
+select:focus{
+    outline: none;
+}
+option:focus{
+    background-color: violet;
+}
+.message{
+    border: 1px solid var(--main-color);
+    border-radius: 4px;
+    text-align: center;
+    padding: 20px 15px;
+    font-size: 19px;
+    background-color: white;
+    margin-bottom: 20px;
+
+}
+.message span{
+color: #009688;
+font-weight: bold;
+}
+.message span::before{
+    content: " [ ";
+}
+
+.message span::after{
+    content: " ] ";
+}
+.start{
+    color: white;
+    background-color: #009688;
+    padding: 15px 10px;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 7px;
+    display: block;
+    margin:  auto ;
+    cursor: pointer;
+    border: 1px solid #eee;
+}
+.the-word{
+    margin:  0 auto -8px;
+    padding: 10px 10px;
+    text-align: center;
+    color: var(--main-color);
+    /* border: 1px solid var(--main-color); */
+    min-width: 150px;
+    font-size: 40px;
+    font-weight: bold;
+    border-radius: 7px;
+    width:fit-content;
+    user-select: none;
+
+}
+.input{
+    width: 100%;
+    padding: 15px 10px;
+    margin: 20px 0 20px;
+    border:3px solid var(--main-color);
+    display: block;
+    text-transform: capitalize;
+    text-align: center;
+    border-radius: 6px;
+   caret-color: var(--main-color); 
+
+}
+.input:focus{
+    outline: none;
+}
+.upcoming-word{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+    padding: 15px 10px;
+    border:3px solid var(--main-color);
+    text-transform: capitalize;
+    text-align: center;
+    border-radius: 6px;
+    
+}
+.upcoming-word div{
+    background-color: var(--main-color);
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 6px;
+    border:1px solid white;
+
+    
+
+}
+.control{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 10px;
+
+}
+.control span{
+    font-weight: bold;
+    color: #009688;
+}
+.finish{
+    font-size: 40px;
+    text-align: center;
+    padding: 10px;
+    width: fit-content;
+    margin: auto;
+
+}
+.finish.good{
+    background-color:var(--main-color);
+    color: white;
+    border-radius: 4px;
+}
+.finish.bad{
+    background-color: red;
+    color: white;
+    border-radius: 4px;
+}

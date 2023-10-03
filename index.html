@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div class="game">
+    <div class="name">Speed Testing Game</div>
+    <div class="container">
+        <span>Choose Level :</span>
+        <select name="" id="list" >
+            <option value="Easy">Easy</option>
+            <option value="Normal">Normal</option>
+            <option value="Hard">Hard</option>
+        </select>
+        <div class="message">You Are Playing on <span class="lvl"></span>And You have 
+            <span class="seconds"></span>second
+        </div>
+        <button class="start"> Start Playing</button>
+        <div class="the-word"></div>
+        <input type="text" class="input">
+        <div class="upcoming-word">
+            the coming word is here
+        </div>
+        <div class="control">
+            <div class="time">Time Left : <span></span></div>
+            <div class="score">Score <span class="got">0</span>
+            From <span class="total"></span>
+            </div>
+        </div>
+        <div class="finish"></div>
+    </div>
+</div>
+
+
+<script src="main.js"></script>
+</body>
+</html>
